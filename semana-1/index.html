@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dev Web</title>
+</head>
+<body>
+    <header>
+        <h1>Blog Dev Web</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </header>
+
+    <main id="artigos">
+        <article id="inicio">
+            <h2>Por que usar HTML semântico?</h2>
+            <p>
+                Tags semânticas como header, nav, main, article, aside e footer descrevem o
+                significado de cada parte da página. Isso ajuda os mecanismos de busca a entender
+                o conteúdo e torna o site mais acessível para quem usa leitores de tela.
+            </p>
+            <img src="img/artigo1.svg" alt="Ilustração com a palavra HTML" width="600" height="300">
+        </article>
+
+        <article>
+            <h2>Primeiros passos com CSS</h2>
+            <p>
+                Depois de estruturar a página com HTML, o próximo passo é estilizá-la com CSS.
+                Com propriedades de cores, espaçamentos e Flexbox, é possível transformar uma
+                página simples em um layout organizado e agradável.
+            </p>
+            <img src="img/artigo2.svg" alt="Ilustração com a palavra CSS" width="600" height="300">
+        </article>
+    </main>
+
+    <aside id="inscricao">
+        <h2>Inscreva-se no blog</h2>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" minlength="3" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="18" max="120" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências</legend>
+
+                <label for="assunto">Assunto de interesse:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+
+                <input type="checkbox" id="termos" name="termos" value="aceito" required>
+                <label for="termos">Aceito os termos</label>
+            </fieldset>
+
+            <button type="submit">Enviar inscrição</button>
+        </form>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Blog Dev Web. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

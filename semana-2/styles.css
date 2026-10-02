@@ -1,0 +1,133 @@
+/* ===== Página ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef1f5;
+    color: #222;
+}
+
+header {
+    background-color: #0b4f8a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+main,
+aside {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== Container do formulário ===== */
+.formulario {
+    max-width: 600px;
+    padding: 24px;
+    background-color: #ffffff; /* diferente do fundo da página */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+fieldset {
+    border: 1px solid #ccd3dc;
+    border-radius: 8px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+/* Cada campo: label em cima, input embaixo */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Bônus: nome e e-mail lado a lado */
+.linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.linha .campo {
+    width: 48%;
+}
+
+/* ===== Campos ===== */
+label {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+input,
+select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #aab4c0;
+    border-radius: 6px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #0b4f8a;
+}
+
+.termos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.termos label {
+    font-weight: normal;
+}
+
+/* ===== Botão ===== */
+button {
+    background-color: #0b4f8a;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #083a66;
+}
