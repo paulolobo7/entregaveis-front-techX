@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dev Web - Semana 4</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 0 16px;
+            color: #222;
+        }
+
+        li {
+            cursor: pointer;
+            padding: 4px 0;
+        }
+
+        .feito {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .destaque {
+            font-weight: bold;
+            color: #0b4f8a;
+        }
+
+        form {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Blog Dev Web</h1>
+
+    <p class="texto">Arrays ajudam a organizar listas de dados.</p>
+    <p class="texto">O DOM permite mudar a página com JavaScript.</p>
+
+    <ul id="lista">
+        <li>Item do HTML 1</li>
+        <li>Item do HTML 2</li>
+        <li>Item do HTML 3</li>
+    </ul>
+
+    <button id="botao">Clique aqui</button>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+
+    <form id="formulario">
+        <input type="text" id="tarefa" placeholder="Nova tarefa">
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
